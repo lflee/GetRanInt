@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+  
+  <meta charset="utf-8">
+
+  <base href="http://polymer-magic-server.appspot.com/components/">
+
+  <script src="webcomponentsjs/webcomponents-lite.min.js"></script>
+  
+  <link href="polymer/polymer.html" rel="import">
+  
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+  
+<x-example></x-example>
+  
+<dom-module id="x-example">
+  <style>
+
+  
+  </style>
+  <template>
+  
+    <h2>I Live</h2>
+    
+  </template>
+  <script>
+    
+    // only need this when both (1) in the main document and (2) on non-Chrome browsers
+    addEventListener('WebComponentsReady', function() {
+      
+      Polymer({
+        is: "x-example"
+      });
+      
+    });
+    
+  </script>
+</dom-module>
+  
+</body>
