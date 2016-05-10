@@ -1,49 +1,38 @@
 <!doctype html>
 <head>
-  
+
   <meta charset="utf-8">
 
-  <base href="https://polymer-magic-server.appspot.com/components/">
+  <!-- <base href="https://polymer-magic-server.appspot.com/components/"> -->
 
-  <script src="webcomponentsjs/webcomponents-lite.min.js"></script>
-  
-  <link href="polymer/polymer.html" rel="import">
-  
+  <!-- <script src="webcomponentsjs/webcomponents-lite.min.js"></script> -->
+
+  <script type="text/javascript">
+
+    function showRanNum(){
+      document.getElementById('numDiv').innerHTML = Math.random();
+    }
+  </script>
+
+
+  <!-- <link href="polymer/polymer.html" rel="import"> -->
+
   <style>
     body {
       font-family: sans-serif;
+      text-align: center;
     }
   </style>
 
 </head>
 <body>
-  
+  <p id="numDiv">
   hello world?
-  
-<x-example></x-example>
-  
-<dom-module id="x-example">
-  <style>
+  </p>
 
-  
-  </style>
-  <template>
-  
-    <h2>I Live</h2>
-    
-  </template>
-  <script>
-    
-    // only need this when both (1) in the main document and (2) on non-Chrome browsers
-    addEventListener('WebComponentsReady', function() {
-      
-      Polymer({
-        is: "x-example"
-      });
-      
-    });
-    
-  </script>
-</dom-module>
-  
+  <button type="button" name="button" onclick="showRanNum()" value="Click me to gen a ran num">Click me to gen a ran num</button>
+
+
+
+
 </body>
